@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/reg_bg"
+
+    android:layout_height="match_parent"
+    tools:context=".Login_ac">
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/outlinedTextFieldt"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="-100dp"
+        android:text="LOGIN !"
+        android:textColor="@color/white"
+        android:textSize="30dp"
+        android:textStyle="bold" />
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/outlinedTextFieldt"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="150dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+
+
+
+        android:hint="Email"
+        android:textColorHint="@color/white"
+        app:endIconMode="clear_text"
+        app:startIconDrawable="@drawable/baseline_account_box_24"
+
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="50dp"
+
+
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/outlinedTextField51"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/outlinedTextFieldt"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+
+
+
+        android:hint="Password"
+        app:hintTextColor="@color/black"
+        app:startIconDrawable="@drawable/baseline_account_box_24"
+        android:layout_marginTop="20dp"
+        android:textColorHint="@color/white"
+        app:endIconMode="password_toggle"
+        app:errorEnabled="true">
+
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="50dp"
+            app:endIconMode="password_toggle"
+
+
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/lgbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:text="Login"
+        android:background="@drawable/btn_bg"
+        android:paddingRight="80dp"
+        android:paddingLeft="80dp"
+
+        android:textSize="30sp"
+        android:textColor="@color/black"
+        android:layout_marginBottom="350dp"
+
+        />
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:text="Register"
+        android:background="#424E94"
+        android:paddingRight="50dp"
+        android:paddingLeft="50dp"
+
+        android:textSize="30sp"
+        android:textColor="@color/white"
+        android:layout_marginBottom="290dp"
+
+        />
+
+
+
+</RelativeLayout>
